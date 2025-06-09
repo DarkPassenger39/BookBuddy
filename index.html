@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            margin-top: 10px;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        #library {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .book {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .book img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        #contact {
+            padding: 40px 20px;
+            background: #fff;
+            text-align: center;
+        }
+        #contact h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BookBuddy</h1>
+        <p>Your smart digital bookshelf</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#library">Library</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <input type="text" id="searchInput" placeholder="Search books..." onkeyup="searchBooks()">
+        <section id="library">
+            <div class="book">
+                <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg" alt="1984">
+                <h3>1984</h3>
+                <p>A dystopian novel about totalitarianism.</p>
+            </div>
+            <div class="book">
+                <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="To Kill a Mockingbird">
+                <h3>To Kill a Mockingbird</h3>
+                <p>A story of racial injustice in the South.</p>
+            </div>
+            <div class="book">
+                <img src="https://covers.openlibrary.org/b/id/6056629-L.jpg" alt="The Great Gatsby">
+                <h3>The Great Gatsby</h3>
+                <p>A tale of love and the American dream.</p>
+            </div>
+            <div class="book">
+                <img src="https://covers.openlibrary.org/b/id/7888788-L.jpg" alt="Harry Potter">
+                <h3>Harry Potter and the Sorcerer’s Stone</h3>
+                <p>A boy discovers he’s a wizard.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-phone"></i> Phone: 0788080721</p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:tamerthabet3@gmail.com">tamerthabet3@gmail.com</a></p>
+            <p>Developer: Tamer Thabet</p>
+            <p>Philadelphia University | University Number: 202120431</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookBuddy | Developed by Tamer Thabet</p>
+        <p>Contact: 0788080721 | Email: tamertthabet@gmail.com</p>
+        <p>Philadelphia University | University Number: 202120431</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
